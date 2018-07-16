@@ -1,0 +1,59 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-submenu/dist/css/bootstrap-submenu";
+
+body {
+  background: url("../storage/css/html.gif") left top repeat;
+
+  header {
+    background: url('../storage/css/header.png') center no-repeat;
+
+    .breadcrumb {
+      background: rgba(0, 0, 0, 0);
+    }
+
+    .container {
+      margin-top: 141px;
+    }
+
+    .navbar {
+      border: 0px;
+    }
+
+    .nav > li > a {
+      @media (max-width: 1024px) and (min-width: 768px) {
+        padding: 10px 11px;
+      }
+    }
+
+    .navbar-form .form-control {
+      @media (max-width: 1200px) and (min-width: 990px) {
+        width: 101px;
+      }
+    }
+  }
+
+  #carouselArea {
+    margin-bottom: 22px;
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+      width: 100%;
+    }
+  }
+
+  footer {
+    background-color: #cedde9;
+    font-size: 13px;
+
+    .breadcrumb {
+      background-color: #cedde9;
+      margin-bottom: 0px;
+      line-height: 1.4;
+    }
+  }
+}
